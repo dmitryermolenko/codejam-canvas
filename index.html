@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+		    <h1 class="page-title">CodeJam - Pallete</h1>
+	    </header>
+<main class="main">
+	<div class="panel-wrapper">
+	<ul class="actions">
+		<li class="actions__item actions__item--paint">Paint bucket</li>
+		<li class="actions__item actions__item--choose">Choose color</li>
+		<li class="actions__item actions__item--move">Move</li>
+		<li class="actions__item actions__item--transform">Transform</li>
+	</ul>
+
+	<ul class="color">
+		<li class="color__item color__item--current">Current color</li>
+		<li class="color__item color__item--prev">Prev color</li>
+		<li class="color__item color__item--red">red</li>
+		<li class="color__item color__item--blue">blue</li>
+	</ul>
+	</div>
+	<div class="canvas-wrapper">
+	<div class="matrix">
+		<canvas id="matrix" width="512" height="512"></canvas>
+	</div>
+	<div class="codwars hidden">
+		<canvas id="codwars" width="512" height="512"></canvas>
+	</div>
+	<div class="rollingscopes hidden">
+		<canvas id="rollingscopes" width="512" height="512"></canvas>
+	</div>
+	</div>
+	
+	<ul class="scale">
+		<li>
+			<input type="radio" id="matrix" name="canvas" value="matrix" checked>
+			<label for="matrix">4x4</label>
+		</li>
+		<li>
+			<input type="radio" id="codwars" name="canvas" value="codwars">
+			<label for="codwars">32x32</label>
+		</li>
+		<li>
+			<input type="radio" id="rollingscopes" name="canvas" value="rollingscopes">
+			<label for="rollingscopes">256x256</label>
+		</li>
+	</ul>
+	
+</main>
+    <script src="js/4x4.js"></script>
+    <script src="js/32x32.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/handlers.js"></script>
+	</div>
+</body>
+</html>
